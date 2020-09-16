@@ -31,7 +31,7 @@ function draw() {
   pos[1] += -velocity[1] * Math.cos(velocity[0]);
   velocity[0] += random() - 0.5;
   // velocity[0] += 0.1;
-  velocity[1] += 0.005;
+  velocity[1] = millis() / 15000;
   if (pos[0] > width - size / 2) {
     // pos[0] = width;
     velocity[0] = -PI / 2;
